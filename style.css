@@ -1,0 +1,187 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Header Styles */
+header {
+    background: #f8f9fa;
+    padding: 15px 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+
+.website-logo{
+    height: 2rem;
+    width: 2rem;
+}
+
+header .logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Hero Section */
+.intro {
+    background: linear-gradient(to right, #bf75ff, #896efe);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0 6rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin: 1.5rem auto;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin: 1.5rem auto 2rem;
+}
+
+.intro a{
+    margin: 1.5rem auto
+}
+
+.btn {
+    background: #8800ff;
+    color: #fff;
+    margin: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* About Section */
+.about {
+    padding: 2% 10%;
+    margin: 2rem;
+    display: flex; 
+  align-items: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about p{
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.about img{
+    height: 40%;
+    width: 40%;
+    padding: auto;
+    margin: auto;
+}
+
+.about-us{
+    width: 60%;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    border: 3px solid #bf75ff;
+    border-radius: 2%;
+}
+
+.service-item h3{
+    color: #8800ff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.service-item p{
+    padding: 0.5rem 0;
+}
+
+.service-item img{
+    height: 80%;
+    width: 80%;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to left, #bf75ff, #896efe);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    padding: 0.5rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .services .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about{
+        display: block;
+    }
+}
